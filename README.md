@@ -10,7 +10,7 @@ Library is currently in Beta, so no benchmarks, optimizations, tests, or anythin
 
 ## Docs
 
-[Follow godoc link](https://godoc.org/github.com/paulvasileko/go-transcolor)
+[Follow godoc link](https://godoc.org/github.com/PaulVasilenko/go-transcolor)
 
 ## Example
 

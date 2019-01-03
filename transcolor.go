@@ -8,7 +8,7 @@ import (
 )
 
 // Transfer transfers color palette from one image to other
-// It adjust color of target image based on source image
+// It adjust color of source image based on target image
 func Transfer(src, target image.Image) image.Image {
 	srcLab := ImageToLab(src)
 	targetLab := ImageToLab(target)
