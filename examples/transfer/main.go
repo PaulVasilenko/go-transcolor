@@ -12,8 +12,8 @@ import (
 )
 
 var (
-	sourceFile = flag.String("source", "", "Source file which colors would be used as a source")
-	targetFile = flag.String("target", "", "Target file is color to which we apply source color palette")
+	sourceFile = flag.String("source", "", "Source file which colors would be used as a source palette")
+	targetFile = flag.String("target", "", "Target file to which we apply source color palette")
 	outputPath = flag.String("out", "", "File where to save the result")
 )
 
