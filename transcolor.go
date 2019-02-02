@@ -29,11 +29,11 @@ func Transfer(src, target image.Image) image.Image {
 			_, _, _, A := target.At(x, y).RGBA()
 			c := colorful.Lab(targetLab.Pix[ind], targetLab.Pix[ind+1], targetLab.Pix[ind+2])
 			R, G, B := c.Clamped().RGB255()
-			newTargetRGBA.Set(x, y, color.RGBA{
+			newTargetRGBA.Set(x, y, color.NRGBA{
 				R: R,
 				G: G,
 				B: B,
-				A: uint8(A),
+				A: uint8(A>>8),
 			})
 			ind += 3
 		}
