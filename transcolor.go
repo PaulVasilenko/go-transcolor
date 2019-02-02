@@ -33,7 +33,6 @@ func Transfer(src, target image.Image) image.Image {
 				R: R,
 				G: G,
 				B: B,
-				A: uint8(A),
 			})
 			ind += 3
 		}
