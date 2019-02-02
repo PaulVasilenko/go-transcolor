@@ -26,7 +26,6 @@ func Transfer(src, target image.Image) image.Image {
 	ind := 0
 	for x := target.Bounds().Min.X; x < target.Bounds().Max.X; x++ {
 		for y := target.Bounds().Min.Y; y < target.Bounds().Max.Y; y++ {
-			_, _, _, A := target.At(x, y).RGBA()
 			c := colorful.Lab(targetLab.Pix[ind], targetLab.Pix[ind+1], targetLab.Pix[ind+2])
 			R, G, B := c.Clamped().RGB255()
 			newTargetRGBA.Set(x, y, color.RGBA{
